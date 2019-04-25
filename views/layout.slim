@@ -1,0 +1,12 @@
+doctype html
+html lang="en"
+  head
+    title== @title || "Advanced Web Programming"
+    meta charset="utf-8"
+    link rel="stylesheet" href="/styles.css"
+  body
+    header
+      h1 COEN278 Advanced Web Programming
+      == slim :nav
+    section
+      == yield

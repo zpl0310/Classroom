@@ -1,0 +1,10 @@
+h2= @student.name
+p Student Id: #{@student.studentId}
+p Email: #{@student.email}
+p <a href="/students">back to students index</a>
+p <a href="/students/#{@student.id}/edit">edit this student</a>
+- if @islogedin
+  p <a href="/logout">log out</a>
+form action="/students/#{@student.id}" method="POST"
+  input type="hidden" name="_method" value="DELETE"
+  input type="submit" value="delete this student"

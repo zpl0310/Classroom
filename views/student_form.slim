@@ -1,0 +1,9 @@
+label for="name" Name:
+input#name type="text" name="student[name]" value="#{@student.name}"
+label for="studentId" Student Id:
+input#studentId type="text" name="student[studentId]" value="#{@student.studentId}"
+label for="email" Email:
+input#email type="text" name="student[email]" value="#{@student.email}"
+input type="submit" value="Save Student"
+- if @islogedin
+  p <a href="/logout">log out</a>
